@@ -1,0 +1,118 @@
+/* DARK MODE ONLY */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f10 url("background.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.5);
+    color: #fdf3e7;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(15, 15, 16, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+h2 {
+    font-family: 'Anton', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0 4px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#welcomeMsg {
+    text-align: center;
+    color: #c9c9c9;
+    margin: 0 0 10px;
+}
+
+/* CHAT AREA */
+#chatBox {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+/* USER BUBBLE — cool blue, complements the warm brand */
+.user-message {
+    align-self: flex-end;
+    background: linear-gradient(160deg, #0f3d5c, #082e44);
+    border: 2px solid #38bdf8;
+    color: #fdf3e7;
+    padding: 10px 14px;
+    border-radius: 18px 18px 4px 18px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* BOT BUBBLE — same red/orange identity as the login boxes */
+.bot-message {
+    align-self: flex-start;
+    background: linear-gradient(160deg, #5c1313, #2e0808);
+    border: 2px solid #f97316;
+    color: #fdf3e7;
+    padding: 10px 14px;
+    border-radius: 18px 18px 18px 4px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* INPUT AREA */
+.input-area {
+    display: flex;
+    padding: 14px;
+    background: #151518;
+    border-top: 1px solid #333;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    background: #0f0f10;
+    color: white;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+    #messageInput:focus {
+        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.5);
+    }
+
+button {
+    margin-left: 10px;
+    padding: 10px 18px;
+    border: none;
+    background: #fbbf24;
+    color: #2e0808;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+    button:hover {
+        background: #f59e0b;
+    }
+
+    button:active {
+        transform: scale(0.97);
+    }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TFC Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="logout()" style="position:fixed; top: 10px; right: 10px;">Logout</button>
+
+<div class="container">
+    <h2>TFC Chatbot</h2>
+    <p id="welcomeMsg"></p>
+
+    <div id="chatBox"></div>
+
+    <div class="input-area">
+        <input id="messageInput" type="text" placeholder="Ask something...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
